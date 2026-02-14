@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-// @ts-ignore: allow side-effect import of global CSS without type declarations
 import { fcLamoon } from './fonts';
 // @ts-ignore: allow side-effect import of global CSS without type declarations
 import './globals.css';
@@ -16,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={fcLamoon.variable}>
       <body className={`${fcLamoon.variable} antialiased`}>{children}</body>
-      {/* <body className={`antialiased`}>{children}</body> */}
     </html>
   );
 }
