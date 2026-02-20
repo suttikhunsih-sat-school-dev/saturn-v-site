@@ -5,6 +5,7 @@
   --foreground: #171717;
   --sat-school-primary-yellow: #fdeb6b;
   --sat-school-secondary-yellow: #fdeb8c;
+  --sat-school-egg-yellow: #f6d683;
   --sat-school-blue: #1855a5;
   --sat-school-dark-blue: #0e3c73;
 }
@@ -16,6 +17,7 @@
   --font-mono: var(--font-geist-mono);
   --color-sat-school-primary-yellow: var(--sat-school-primary-yellow);
   --color-sat-school-secondary-yellow: var(--sat-school-secondary-yellow);
+  --color-sat-school-egg-yellow: var(--sat-school-egg-yellow);
   --color-sat-school-blue: var(--sat-school-blue);
   --color-sat-school-dark-blue: var(--sat-school-dark-blue);
 }
