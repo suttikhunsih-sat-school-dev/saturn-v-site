@@ -1,6 +1,6 @@
 import Image from 'next/image';
+import PageHeader from '../../components/PageHeader';
 import ProjectBluBox from '../../components/ProjectPage/ProjectBluBox';
-import Text from '../../components/Text';
 export default function Project() {
   const projectBoxes = [
     {
@@ -52,17 +52,16 @@ export default function Project() {
         className="object-cover -z-10"
         priority
       />
+      <div className="bg-sat-school-egg-yellow absolute top-0 left-0 w-full h-[100px]"></div>
       {/* Header Section */}
-      <div className="bg-[#1855a5] px-4 md:px-8 md:py-2 mb-8 md:mb-12 rounded-b-3xl shadow-md mt-10 ml-4">
-        <div className="container mx-auto flex gap-4 md:gap-6 items-start md:items-center">
-          <div>
-            <Text.Header textColor="white">SATURDAY SCHOOL</Text.Header>
-            <Text.Header textColor="white">
-              SATURN V PROJECT{' '}
-              <span className="text-sat-school-secondary-yellow">ทำอะไรได้บ้าง</span>
-            </Text.Header>
-          </div>
-        </div>
+      <div style={{ paddingRight: 0, paddingLeft: 10 }} className="px-4 md:px-8 mt-2">
+        <PageHeader
+          title="SATURDAY SCHOOL"
+          subtitle="SATURN V PROJECT"
+          subtitleHighlight="ทำอะไรได้บ้าง?"
+          logoSrc="/logo1.svg"
+          logoAlt="Saturn V Logo"
+        />
       </div>
 
       {/* Blue Boxes Grid */}
