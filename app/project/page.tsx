@@ -61,7 +61,7 @@ export default function Project() {
   ];
 
   return (
-    <div className="min-h-screen bg-white pt-0 pb-12 md:pb-16">
+    <div className="min-h-screen bg-white">
       <Image
         src="/bg-home-page.jpg"
         alt="Background"
