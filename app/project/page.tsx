@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import PageHeader from '../../components/PageHeader';
 import ProjectBluBox from '../../components/ProjectPage/ProjectBluBox';
 export default function Project() {
@@ -61,14 +60,7 @@ export default function Project() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      <Image
-        src="/bg-home-page.jpg"
-        alt="Background"
-        fill
-        className="object-cover -z-10"
-        priority
-      />
+    <div>
       <div className="bg-sat-school-egg-yellow absolute top-0 left-0 w-full h-[100px]"></div>
       {/* Header Section */}
       <div style={{ paddingRight: 0, paddingLeft: 10 }} className="px-4 md:px-8 mt-2">

@@ -13,8 +13,8 @@ const CardTitle = ({
       style={{
         color: textColor || '#000000',
         textShadow: `
-          2px 2px 0 rgba(0,0,0,0.2),
-          2px 2px 0 rgba(0,0,0,0.25)
+          1.5px 1px 0 rgba(0,0,0,0.2),
+          1.5px 1px 0 rgba(0,0,0,0.2)
         `,
       }}
     >
