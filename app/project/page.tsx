@@ -6,12 +6,12 @@ export default function Project() {
       title: 'Project Career & Future Skills',
       items: [
         { label: 'Teacherpreneur', navLink: '/project/teacherpreneur' },
-        { label: 'ท้องเรียน ESPORTs', navLink: '/project/esports' },
+        { label: 'ห้องเรียน ESPORTs', navLink: '/project/esports' },
         {
-          label: 'โครงการ สส่งเสริมการรู้เท่าทันสื่อออนไลน์',
+          label: 'โครงการ ส่งเสริมการรู้เท่าทันสื่อออนไลน์',
           navLink: '/project/media-literacy',
         },
-        { label: 'UnPlug Coding', navLink: '/project/unplug-coding' },
+        { label: 'UnPlug Coding', navLink: '/project/cgd-unplug-coding' },
       ],
       imageSrc: '/cover.png',
       imageAlt: 'Project Career & Future Skills',
@@ -31,7 +31,7 @@ export default function Project() {
     {
       title: 'Project Health',
       items: [
-        { label: 'Workshop Healthy Gameplay', navLink: '/project/healthy-gameplay' },
+        { label: 'Workshop Healthy Gameplay', navLink: '/project/healthy-gaming' },
         {
           label: 'โครงการ "หมอคู่คิดใส่ใจสุขภาพเด็กไทย ดีถ้วนหน้า"',
           navLink: '/project/morkookids',
@@ -45,7 +45,7 @@ export default function Project() {
       items: [
         {
           label: 'Growth mindset : Signature Workshop',
-          navLink: '/project/growth-mindset',
+          navLink: '/project/signature-workshop',
         },
         { label: 'Self Awareness', navLink: '/project/self-awareness' },
         { label: 'Resilience', navLink: '/project/resilience' },
