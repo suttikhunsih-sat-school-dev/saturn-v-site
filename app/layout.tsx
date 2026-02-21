@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { fcLamoon } from './fonts';
 
-import FloatingMenuProvider from '../components/FloatingMenuProvider';
+import FloatingMenuWrapper from '../components/FloatingMenuWrapper';
 // @ts-ignore: allow side-effect import of global CSS without type declarations
 import './globals.css';
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={fcLamoon.variable}>
       <body className={`${fcLamoon.variable} antialiased`}>
-        <FloatingMenuProvider />
+        <FloatingMenuWrapper />
         {children}
       </body>
     </html>
