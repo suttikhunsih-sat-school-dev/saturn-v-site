@@ -69,7 +69,8 @@ export default function Format() {
         {/* Right Section - Online & Onsite Boxes */}
         <div className="flex flex-col gap-20 pt-40">
           {/* Online Box */}
-          <div>
+          <div className="relative w-65">
+            <div className="absolute top-3 left-3 w-full h-full bg-white rounded-4xl"></div>
             <div className="relative bg-sat-school-super-yellow rounded-3xl p-2 shadow-lg min-h-[240px] flex flex-col justify-start max-w-[260px]">
               <div className="absolute -top-14 left-1/2 -translate-x-1/2 z-20">
                 <div className="w-28 h-28 rounded-full border-6 border-sat-school-blue overflow-hidden bg-white">
@@ -95,7 +96,8 @@ export default function Format() {
           </div>
 
           {/* Onsite Box */}
-          <div>
+          <div className="relative w-65">
+            <div className="absolute top-3 left-3 w-full h-full bg-white rounded-4xl"></div>
             <div className="relative bg-sat-school-super-yellow rounded-3xl p-2 shadow-lg min-h-[240px] flex flex-col justify-start max-w-[260px]">
               <div className="absolute -top-14 left-1/2 -translate-x-1/2 z-20">
                 <div className="w-28 h-28 rounded-full border-6 border-sat-school-blue overflow-hidden bg-white">
