@@ -33,7 +33,7 @@ const ProjectBluBox: React.FC<ProjectBluBoxProps> = ({
     >
       <div
         className={cn(
-          'rounded-2xl shadow-xl border-6 border-sat-school-primary-yellow overflow-hidden h-[620px]',
+          'rounded-2xl shadow-xl border-6 border-sat-school-primary-yellow overflow-hidden h-[608px]',
           isDarkBlue ? 'bg-sat-school-dark-blue' : 'bg-sat-school-blue'
         )}
       >
