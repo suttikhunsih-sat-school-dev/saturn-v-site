@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import MiniYellowCard from '../../MiniYellowCard';
 import Text from '../../Text';
 import WhiteDotSpan from '../../WhiteDot';
@@ -20,7 +21,7 @@ interface SubProjectPageContentProps {
     teachers: number;
   };
   imageGruopSrc: string;
-  videoSrc: string;
+  videoSrc?: string;
 }
 const SubProjectPageContent = ({
   logoList,
@@ -36,6 +37,25 @@ const SubProjectPageContent = ({
 }: SubProjectPageContentProps) => {
   return (
     <div className="flex">
+      {/* Back Button - Floating */}
+      <Link
+        href="/project"
+        className="fixed top-8 left-8 z-30 inline-flex items-center gap-2 px-5 py-2 bg-sat-school-dark-blue text-white font-bold rounded-full hover:bg-sat-school-blue transition-colors shadow-md"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+        >
+          <line x1="19" y1="12" x2="5" y2="12" />
+          <polyline points="12 19 5 12 12 5" />
+        </svg>
+        กลับไปยังโครงการ
+      </Link>
+
       {/* text content */}
       <div className="p-10 pt-2 w-[60%]">
         <div className="flex justify-center items-center h-[70px] mt-2">
@@ -44,9 +64,9 @@ const SubProjectPageContent = ({
         </div>
         <div className="flex flex-col justify-center items-center">
           {/* Page Title */}
-          <Text.SubtitleBlue textColor="#1855a5" fontSize="50px">
+          <Text.Subtitle textColor="#1855a5" fontSize="50px">
             {pageTitle}
-          </Text.SubtitleBlue>
+          </Text.Subtitle>
           <Text.SubtitleDarkBlueNoShadow textColor="#0e3c73">
             {pageSubtitle}
           </Text.SubtitleDarkBlueNoShadow>
@@ -84,15 +104,15 @@ const SubProjectPageContent = ({
         {/* number card section */}
         <div className="flex mt-4">
           <MiniYellowCard
-            description={`${participantNumbers.students} คน`}
+            description={`นักเรียน ${participantNumbers.students} คน`}
             imageSrc="/students.png"
           />
           <MiniYellowCard
-            description={`${participantNumbers.volunteers} คน`}
+            description={`อาสา ${participantNumbers.volunteers} คน`}
             imageSrc="/teacher-female.png"
           />
           <MiniYellowCard
-            description={`${participantNumbers.teachers} คน`}
+            description={`คุณครู ${participantNumbers.teachers} คน`}
             imageSrc="/teacher-with-board.png"
           />
         </div>
@@ -107,17 +127,19 @@ const SubProjectPageContent = ({
           height={700}
         />
         {/* video */}
-        <div className="mt-3 flex justify-center">
-          <iframe
-            width="628"
-            height="276"
-            src={videoSrc}
-            title="YouTube video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="rounded-xl shadow-lg"
-          />
-        </div>
+        {videoSrc && (
+          <div className="mt-3 flex justify-center">
+            <iframe
+              width="628"
+              height="276"
+              src={videoSrc}
+              title="YouTube video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="rounded-xl shadow-lg"
+            />
+          </div>
+        )}
       </div>
     </div>
   );

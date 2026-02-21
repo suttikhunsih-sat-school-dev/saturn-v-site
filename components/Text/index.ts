@@ -1,11 +1,11 @@
 import CardTitle from './CardTitle';
 import Header from './Header';
-import SubtitleBlue from './SubtitleBlue';
+import Subtitle from './Subtitle';
 import SubtitleDarkBlueNoShadow from './SubtitleDarkBlueNoShadow';
 const Text = {
   Header,
   CardTitle,
   SubtitleDarkBlueNoShadow,
-  SubtitleBlue,
+  Subtitle,
 };
 export default Text;

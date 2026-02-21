@@ -1,7 +1,7 @@
 import Image from 'next/image';
 const ProjectLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="relative min-h-screen">
       <Image
         src="/bg-home-page.jpg"
         alt="Background"

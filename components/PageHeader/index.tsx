@@ -34,8 +34,10 @@ export default function PageHeader({
 
       {/* Text Container - Positioned on the right side of background */}
       <div className="flex-1 px-6 md:px-12 flex flex-col justify-center">
-        <Text.Header textColor="white">{title}</Text.Header>
-        <Text.Header textColor="white">
+        <Text.Header noShadow textColor="white">
+          {title}
+        </Text.Header>
+        <Text.Header noShadow textColor="white">
           {subtitle}{' '}
           {subtitleHighlight && (
             <span className="text-sat-school-secondary-yellow">{subtitleHighlight}</span>

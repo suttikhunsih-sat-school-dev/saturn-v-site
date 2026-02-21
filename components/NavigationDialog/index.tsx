@@ -1,6 +1,6 @@
 'use client';
-
 import { AnimatePresence, motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 import { floatingMenuItems } from '../../lib/constant';
 
@@ -18,16 +18,16 @@ export default function NavigationDialog({ isOpen, onClose }: NavigationDialogPr
       x: 0,
       transition: {
         type: 'spring' as const,
-        stiffness: 300,
-        damping: 30,
+        stiffness: 500,
+        damping: 100,
       },
     },
     exit: {
       x: '100%',
       transition: {
         type: 'spring' as const,
-        stiffness: 300,
-        damping: 30,
+        stiffness: 500,
+        damping: 100,
       },
     },
   };
@@ -44,10 +44,10 @@ export default function NavigationDialog({ isOpen, onClose }: NavigationDialogPr
       opacity: 1,
       x: 0,
       transition: {
-        delay: i * 0.05,
+        delay: i * 0.025,
         type: 'spring' as const,
-        stiffness: 300,
-        damping: 25,
+        stiffness: 500,
+        damping: 20,
       },
     }),
   };
@@ -78,7 +78,7 @@ export default function NavigationDialog({ isOpen, onClose }: NavigationDialogPr
               {/* Close button */}
               <button
                 onClick={onClose}
-                className="absolute top-6 right-6 text-black hover:text-sat-school-dark-blue transition-colors"
+                className="absolute top-16 right-10 text-black hover:text-sat-school-dark-blue transition-colors"
               >
                 <svg
                   width="32"
@@ -92,6 +92,15 @@ export default function NavigationDialog({ isOpen, onClose }: NavigationDialogPr
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </button>
+              <div className=" absolute top-33 left-32 rotate-[-45deg]">
+                <Image
+                  src="/logo3.svg"
+                  alt="Logo 1"
+                  width={50}
+                  height={50}
+                  className="object-contain"
+                />
+              </div>
 
               {/* Navigation Menu */}
               <nav className="flex flex-col gap-8">
