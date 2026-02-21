@@ -1,8 +1,8 @@
-import YellowBoxesWithShade from './YellowBoxesWIthShade';
+import YellowBoxesWithBlueShade from './YellowBoxesWithBlueShade';
 import YellowBoxesWithGrayShade from './YellowBoxesWithGrayShade';
 
 const InfoBoxes = {
-  YellowBoxesWithShade,
+  YellowBoxesWithBlueShade,
   YellowBoxesWithGrayShade,
 };
 
