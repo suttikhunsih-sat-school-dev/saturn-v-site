@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useFloatingMenuAnimation } from '../../hooks/useFloatingMenuAnimation';
 
 interface FloatingMenuButtonProps {
@@ -15,18 +15,18 @@ export default function FloatingMenuButton({
 }: FloatingMenuButtonProps) {
   const { isOpen, isHovered, setIsHovered, toggleMenu, closeMenu } =
     useFloatingMenuAnimation();
-  const [isIconX, setIsIconX] = useState(false);
+  // const [isIconX, setIsIconX] = useState(false);
 
   const handleClick = () => {
     toggleMenu();
-    setIsIconX(!isIconX);
+    // setIsIconX(!isIconX);
     onOpenChange?.(!isOpen);
   };
 
   useEffect(() => {
     if (!isOpenNavDialog) {
       closeMenu();
-      setIsIconX(false);
+      // setIsIconX(false);
     }
   }, [isOpenNavDialog]);
 
@@ -64,45 +64,25 @@ export default function FloatingMenuButton({
 
       {/* Hamburger/X Icon */}
       <motion.div
-        animate={{
-          x: isIconX ? -4 : 0,
-        }}
         transition={{
           type: 'spring',
           stiffness: 300,
           damping: 25,
         }}
       >
-        {!isIconX ? (
-          // Hamburger Icon
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            className="text-black"
-          >
-            <line x1="3" y1="6" x2="21" y2="6" />
-            <line x1="3" y1="12" x2="21" y2="12" />
-            <line x1="3" y1="18" x2="21" y2="18" />
-          </svg>
-        ) : (
-          // X Icon
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            className="text-black"
-          >
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        )}
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          className="text-black"
+        >
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
       </motion.div>
     </motion.button>
   );
