@@ -18,16 +18,16 @@ export default function NavigationDialog({ isOpen, onClose }: NavigationDialogPr
       x: 0,
       transition: {
         type: 'spring' as const,
-        stiffness: 300,
-        damping: 30,
+        stiffness: 500,
+        damping: 100,
       },
     },
     exit: {
       x: '100%',
       transition: {
         type: 'spring' as const,
-        stiffness: 300,
-        damping: 30,
+        stiffness: 500,
+        damping: 100,
       },
     },
   };
@@ -44,10 +44,10 @@ export default function NavigationDialog({ isOpen, onClose }: NavigationDialogPr
       opacity: 1,
       x: 0,
       transition: {
-        delay: i * 0.05,
+        delay: i * 0.025,
         type: 'spring' as const,
-        stiffness: 300,
-        damping: 25,
+        stiffness: 500,
+        damping: 20,
       },
     }),
   };
