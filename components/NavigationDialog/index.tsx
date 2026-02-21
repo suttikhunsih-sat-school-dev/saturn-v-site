@@ -92,12 +92,12 @@ export default function NavigationDialog({ isOpen, onClose }: NavigationDialogPr
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </button>
-              <div className=" absolute top-30 left-32 rotate-[-90deg]">
+              <div className=" absolute top-33 left-32 rotate-[-45deg]">
                 <Image
                   src="/logo3.svg"
                   alt="Logo 1"
-                  width={80}
-                  height={80}
+                  width={50}
+                  height={50}
                   className="object-contain"
                 />
               </div>
