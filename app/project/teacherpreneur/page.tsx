@@ -26,12 +26,40 @@ export default function Teacherpreneur() {
           </Text.SubtitleDarkBlueNoShadow>
         </div>
         {/* text box */}
-        <div className="p-4 bg-sat-school-dark-blue rounded-lg flex justify-center items-center mt-6">
-          <p className="text-lg text-white">
-            <WhiteDotSpan />
-            The Teacherpreneur project is a collaboration between Saturday School and
-            Deloitte, aimed at empowering educators with digital skills and
-            entrepreneurial mindset.
+        {/* dark box, project objective */}
+        <div className="p-2 bg-sat-school-dark-blue rounded-xl flex justify-start items-start mt-6 pt-4">
+          <WhiteDotSpan />
+          <p className="text-2xl text-white px-2 font-bold">
+            <span className="text-2xl text-sat-school-primary-yellow">
+              รายละเอียดโครงการ :{' '}
+            </span>
+            โครงการปั้นผู้ประกอบการรุ่นเยาว์
+            เป็นความร่วมมือระหว่างมูลนิธิโรงเรียนวันเสาร์และบริษัท ดีลอยท์ ประเทศไทย
+            มีเป้าหมายเพื่อศักยภาพของครูในการส่งเสริมการเรียนรู้ด้านแนวคิด
+            และทักษะความเป็นผู้ประกอบการให้กับนักเรียน และพัฒนาทักษะและความรู้ของเยาวชน
+            การสร้างความรู้และทักษะที่เกี่ยวข้องกับการเป็นผู้ประกอบการ
+          </p>
+        </div>
+        {/* two blue box - project content */}
+        <div className="p-2 bg-sat-school-blue rounded-xl flex justify-start items-start mt-6 pt-4">
+          <WhiteDotSpan />
+          <p className="text-2xl text-white px-2 font-bold">
+            <span className="text-2xl text-sat-school-primary-yellow">
+              ความถนัดและความรู้ด้านต่าง ๆ :{' '}
+            </span>
+            ได้รับความรู้และวิธีคิดแบบผู้ประกอบการ ทักษะการทำธุรกิจ
+            และแลกเปลี่ยนไอเดียในการเป็นผู้ประกอบการทำธุรกิจ
+          </p>
+        </div>
+        <div className="p-2 bg-sat-school-blue rounded-xl flex justify-start items-start mt-6 pt-4">
+          <WhiteDotSpan />
+          <p className="text-2xl text-white px-2 font-bold">
+            <span className="text-2xl text-sat-school-primary-yellow">
+              สิ่งที่คุณครูจะได้หลังจากจบโครงการ :{' '}
+            </span>
+            ผู้เข้าร่วมโครงการจะได้รับการเสริมทักษะและวิธีคิดแบบผู้ประกอบการ
+            ผ่านกิจกรรมอบรมเชิงปฎิบัติการ
+            โดยวิทยากรผู้เชี่ยวชาญและนำองค์ความรู้ที่ได้ไปจัดแผนการสอนเพื่อนำไปสอนกับนักเรียน
           </p>
         </div>
       </div>
