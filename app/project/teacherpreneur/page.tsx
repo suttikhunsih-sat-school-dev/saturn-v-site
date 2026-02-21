@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import MiniYellowCard from '../../../components/MiniYellowCard';
 import LogoGroupTopSubPage from '../../../components/ProjectPage/LogoGroupTopSubPage';
 import Text from '../../../components/Text';
 import WhiteDotSpan from '../../../components/WhiteDot';
@@ -6,7 +7,7 @@ export default function Teacherpreneur() {
   return (
     <div className="flex">
       {/* text content */}
-      <div className="p-10 pt-8 w-[50%]">
+      <div className="p-10 pt-8 w-[60%]">
         <div className="flex justify-center items-center h-[70px] mt-2">
           {/* logos */}
           <LogoGroupTopSubPage
@@ -27,7 +28,7 @@ export default function Teacherpreneur() {
         </div>
         {/* text box */}
         {/* dark box, project objective */}
-        <div className="p-2 bg-sat-school-dark-blue rounded-xl flex justify-start items-start mt-6 pt-4">
+        <div className="p-2 bg-sat-school-dark-blue rounded-2xl flex justify-start items-start mt-6 py-6">
           <WhiteDotSpan />
           <p className="text-2xl text-white px-2 font-bold">
             <span className="text-2xl text-sat-school-primary-yellow">
@@ -41,7 +42,7 @@ export default function Teacherpreneur() {
           </p>
         </div>
         {/* two blue box - project content */}
-        <div className="p-2 bg-sat-school-blue rounded-xl flex justify-start items-start mt-6 pt-4">
+        <div className="p-2 bg-sat-school-blue rounded-2xl flex justify-start items-start mt-6 py-6">
           <WhiteDotSpan />
           <p className="text-2xl text-white px-2 font-bold">
             <span className="text-2xl text-sat-school-primary-yellow">
@@ -51,7 +52,7 @@ export default function Teacherpreneur() {
             และแลกเปลี่ยนไอเดียในการเป็นผู้ประกอบการทำธุรกิจ
           </p>
         </div>
-        <div className="p-2 bg-sat-school-blue rounded-xl flex justify-start items-start mt-6 pt-4">
+        <div className="p-2 bg-sat-school-blue rounded-2xl flex justify-start items-start mt-6 py-6">
           <WhiteDotSpan />
           <p className="text-2xl text-white px-2 font-bold">
             <span className="text-2xl text-sat-school-primary-yellow">
@@ -62,16 +63,34 @@ export default function Teacherpreneur() {
             โดยวิทยากรผู้เชี่ยวชาญและนำองค์ความรู้ที่ได้ไปจัดแผนการสอนเพื่อนำไปสอนกับนักเรียน
           </p>
         </div>
+        {/* number card section */}
+        <div className="flex mt-4">
+          <MiniYellowCard description="นักเรียน 100 คน" imageSrc="/students.png" />
+          <MiniYellowCard description="อาสา 20 คน" imageSrc="/teacher-female.png" />
+          <MiniYellowCard description="คุณครู 10 คน" imageSrc="/teacher-with-board.png" />
+        </div>
       </div>
       {/* image content */}
-      <div className="p-10">
+      <div className="p-10 pt-4 pl-0 w-[50%] flex flex-col justify-start items-center">
         <Image
-          src="/teacherpreneur.jpg"
+          src="/techerpreneur-right-image-group.png"
           alt="Teacherpreneur Image"
-          width={400}
-          height={300}
           className="object-cover rounded-lg"
+          width={700}
+          height={700}
         />
+        {/* video */}
+        <div className="mt-3 flex justify-center">
+          <iframe
+            width="628"
+            height="290"
+            src="https://www.youtube.com/embed/yqYhS3ncMrY"
+            title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="rounded-xl shadow-lg"
+          />
+        </div>
       </div>
     </div>
   );
