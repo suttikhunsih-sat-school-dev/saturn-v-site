@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import NavigationBar from '../components/NavigationBar';
-
+import Text from '../components/Text';
 export default function Home() {
   return (
     <div className="relative min-h-screen text-white">
@@ -31,9 +31,7 @@ export default function Home() {
               className="object-contain"
             />
           </div>
-          <h1 className="text-6xl font-bold text-sat-school-primary-yellow [text-shadow:3px_3px_0_rgba(10,34,51,0.6),0_6px_12px_rgba(0,0,0,0.6)]">
-            มูลนิธิโรงเรียนวันเสาร์
-          </h1>
+          <Text.Header textColor="#fdeb6b">มูลนิธิโรงเรียนวันเสาร์</Text.Header>
           <p className="-mt-1 font-bold text-3xl [text-shadow:1px_1px_0_#90A1B9,0_6px_12px_rgba(0,0,0,0.6)] tracking-wider">
             THE FUTURE OF OUR EDUCATION IS IN YOUR HANDS
           </p>

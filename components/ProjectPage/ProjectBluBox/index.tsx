@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { cn } from '../../../lib/utils';
 import Text from '../../Text';
+import WhiteDotSpan from '../../WhiteDot';
 
 interface ProjectBluBoxProps {
   title: string;
@@ -52,7 +53,7 @@ const ProjectBluBox: React.FC<ProjectBluBoxProps> = ({
           <ul className="flex flex-col gap-4 text-white text-base md:text-[30px] flex-1 overflow-y-auto pr-2 leading-[1]">
             {list?.map((item, index) => (
               <li key={index} className="flex items-start gap-3">
-                <span className="mt-3 w-2 h-2 bg-white rounded-full shrink-0" />
+                <WhiteDotSpan />
                 <Link
                   href={item.navLink}
                   className="hover:underline underline-offset-4 transition-all"
