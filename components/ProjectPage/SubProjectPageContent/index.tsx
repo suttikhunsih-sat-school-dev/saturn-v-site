@@ -20,7 +20,7 @@ interface SubProjectPageContentProps {
     teachers: number;
   };
   imageGruopSrc: string;
-  videoSrc: string;
+  videoSrc?: string;
 }
 const SubProjectPageContent = ({
   logoList,
@@ -107,17 +107,19 @@ const SubProjectPageContent = ({
           height={700}
         />
         {/* video */}
-        <div className="mt-3 flex justify-center">
-          <iframe
-            width="628"
-            height="276"
-            src={videoSrc}
-            title="YouTube video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="rounded-xl shadow-lg"
-          />
-        </div>
+        {videoSrc && (
+          <div className="mt-3 flex justify-center">
+            <iframe
+              width="628"
+              height="276"
+              src={videoSrc}
+              title="YouTube video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="rounded-xl shadow-lg"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
