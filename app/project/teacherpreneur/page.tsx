@@ -7,7 +7,7 @@ export default function Teacherpreneur() {
   return (
     <div className="flex">
       {/* text content */}
-      <div className="p-10 pt-8 w-[60%]">
+      <div className="p-10 pt-2 w-[60%]">
         <div className="flex justify-center items-center h-[70px] mt-2">
           {/* logos */}
           <LogoGroupTopSubPage
@@ -19,7 +19,7 @@ export default function Teacherpreneur() {
         </div>
         <div className="flex flex-col justify-center items-center">
           {/* Page Title */}
-          <Text.SubtitleBlue textColor="#1855a5">
+          <Text.SubtitleBlue textColor="#1855a5" fontSize="50px">
             Saturday School Saturn V Project
           </Text.SubtitleBlue>
           <Text.SubtitleDarkBlueNoShadow textColor="#0e3c73">
@@ -83,7 +83,7 @@ export default function Teacherpreneur() {
         <div className="mt-3 flex justify-center">
           <iframe
             width="628"
-            height="290"
+            height="276"
             src="https://www.youtube.com/embed/yqYhS3ncMrY"
             title="YouTube video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
