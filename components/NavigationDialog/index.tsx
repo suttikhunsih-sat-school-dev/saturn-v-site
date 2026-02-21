@@ -2,25 +2,14 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
+import { floatingMenuItems } from '../../lib/constant';
 
 interface NavigationDialogProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-const menus = {
-  'เกี่ยวกับ SATURN V': [
-    ['/about', 'SATURN V คืออะไร'],
-    ['/theme', 'Theme SATURN V'],
-  ],
-  'โครงการของ SATURN V': [['/project', 'SATURN V Project']],
-  สนใจทำโครงการ: [
-    ['/format', 'รูปแบบการจัดโครงการ'],
-    ['/target', 'ระยะเวลาการจัดโครงการและกลุ่มเป้าหมายในการจัดโครงการ'],
-    ['/pr', 'Public Relations SATURN V'],
-    ['/report', 'การรายงานผลหลังจบโครงการ (Report)'],
-  ],
-};
+const menus = floatingMenuItems;
 
 export default function NavigationDialog({ isOpen, onClose }: NavigationDialogProps) {
   const containerVariants = {

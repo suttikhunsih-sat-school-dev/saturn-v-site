@@ -1,22 +1,10 @@
-const menus = {
-  'เกี่ยวกับ SATURN V': [
-    ['/about', 'SATURN V คืออะไร'],
-    ['/theme', 'Theme SATURN V'],
-  ],
-  'โครงการของ SATURN V': [['/project', 'SATURN V Project']],
-  สนใจทำโครงการ: [
-    ['/format', 'รูปแบบการจัดโครงการ'],
-    ['/target', 'ระยะเวลาการจัดโครงการและกลุ่มเป้าหมายในการจัดโครงการ'],
-    ['/pr', 'Public Relations SATURN V'],
-    ['/report', 'การรายงานผลหลังจบโครงการ (Report)'],
-  ],
-};
+import { firstPageMenus } from '../../lib/constant';
 
 export default function NavigationBar() {
   return (
     <nav className="bg-sat-school-primary-yellow text-black mx-auto w-fit rounded-xl font-bold text-3xl py-4 px-[100px] shadow-lg -mt-6 relative z-20">
       <ul className="flex gap-[60px]">
-        {Object.entries(menus).map(([title, items], index) => {
+        {Object.entries(firstPageMenus).map(([title, items], index) => {
           return (
             <li key={`${title}-${index}`} className="relative group">
               <button className="hover:text-sat-school-dark-blue bg-transparent [text-shadow:1_1px_0_#808080] tracking-wider">
