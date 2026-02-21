@@ -47,8 +47,8 @@ export default function Project() {
           label: 'Growth mindset : Signature Workshop',
           navLink: '/project/signature-workshop',
         },
-        { label: 'Self Awareness', navLink: '/project/self-awareness' },
-        { label: 'Resilience', navLink: '/project/resilience' },
+        { label: 'Self Awareness', navLink: '#' },
+        { label: 'Resilience', navLink: '#' },
         {
           label: 'Prosocial Behavior : Public Goods Game',
           navLink: '/project/public-good-games',
