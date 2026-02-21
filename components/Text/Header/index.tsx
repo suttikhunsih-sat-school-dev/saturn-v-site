@@ -1,15 +1,20 @@
 const Header = ({
   children,
   textColor,
+  noShadow,
 }: {
   children: React.ReactNode;
   textColor?: string;
+  noShadow?: boolean;
 }) => {
   return (
     <h1
-      className={`text-6xl font-bold [text-shadow:3px_3px_0_rgba(10,34,51,0.6),0_6px_12px_rgba(0,0,0,0.6)]`}
+      className={`text-6xl font-bold`}
       style={{
         color: textColor || 'white',
+        textShadow: noShadow
+          ? 'none'
+          : '3px 3px 0 rgba(10,34,51,0.6), 0 6px 12px rgba(0,0,0,0.6)',
       }}
     >
       {children}

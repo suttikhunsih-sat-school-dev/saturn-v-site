@@ -64,9 +64,9 @@ const SubProjectPageContent = ({
         </div>
         <div className="flex flex-col justify-center items-center">
           {/* Page Title */}
-          <Text.SubtitleBlue textColor="#1855a5" fontSize="50px">
+          <Text.Subtitle textColor="#1855a5" fontSize="50px">
             {pageTitle}
-          </Text.SubtitleBlue>
+          </Text.Subtitle>
           <Text.SubtitleDarkBlueNoShadow textColor="#0e3c73">
             {pageSubtitle}
           </Text.SubtitleDarkBlueNoShadow>
@@ -104,15 +104,15 @@ const SubProjectPageContent = ({
         {/* number card section */}
         <div className="flex mt-4">
           <MiniYellowCard
-            description={`${participantNumbers.students} คน`}
+            description={`นักเรียน ${participantNumbers.students} คน`}
             imageSrc="/students.png"
           />
           <MiniYellowCard
-            description={`${participantNumbers.volunteers} คน`}
+            description={`อาสา ${participantNumbers.volunteers} คน`}
             imageSrc="/teacher-female.png"
           />
           <MiniYellowCard
-            description={`${participantNumbers.teachers} คน`}
+            description={`คุณครู ${participantNumbers.teachers} คน`}
             imageSrc="/teacher-with-board.png"
           />
         </div>
