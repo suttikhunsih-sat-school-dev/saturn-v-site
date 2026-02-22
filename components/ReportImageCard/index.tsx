@@ -19,7 +19,7 @@ export default function ReportImageCard({
       <Image src={mainImage} alt={mainAlt} fill className="object-cover" />
 
       {/* Top Left Badge */}
-      <div className="absolute -top-4 -left-8 flex items-center z-30">
+      <div className="absolute -top-4 -left-8 flex items-center z-10">
         {/* Icon */}
         <div className="relative w-10 h-10">
           <Image src={badgeIcon} alt="Badge Icon" fill className="object-contain" />
