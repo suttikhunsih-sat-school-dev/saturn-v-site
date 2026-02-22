@@ -105,20 +105,20 @@ const SubProjectPageContent = ({
         {/* number card section */}
         <div className="flex mt-4">
           <MiniYellowCard
-            description={`นักเรียน ${participantNumbers.students} คน`}
+            description={`นักเรียน ${participantNumbers.students.toLocaleString()} คน`}
             imageSrc="/students.png"
           />
 
           {participantNumbers.volunteers && (
             <MiniYellowCard
-              description={`อาสา ${participantNumbers.volunteers} คน`}
+              description={`อาสา ${participantNumbers.volunteers.toLocaleString()} คน`}
               imageSrc="/teacher.png"
             />
           )}
 
           {participantNumbers.teachers && (
             <MiniYellowCard
-              description={`คุณครู ${participantNumbers.teachers} คน`}
+              description={`คุณครู ${participantNumbers.teachers.toLocaleString()} คน`}
               imageSrc="/teacher-with-board.png"
             />
           )}
