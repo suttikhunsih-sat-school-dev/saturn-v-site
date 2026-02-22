@@ -21,13 +21,13 @@ export default function About() {
       </div>
 
       {/* BODY */}
-      <div className="max-w-7xl mx-auto py-4 px-6 flex gap-15 items-center">
+      <div className="max-w-7xl mx-auto py-4 px-6 flex gap-10 items-center">
         {/* LEFT BOX */}
-        <div className="relative w-80">
+        <div className="relative w-90 h-90">
           <div className="absolute top-3 left-3 w-full h-full bg-sat-school-blue rounded-xl"></div>
-          <div className="relative bg-[#F4E28A] p-6 rounded-xl">
+          <div className="relative bg-[#F4E28A] p-6 rounded-xl h-full">
             <div className="absolute -top-14 left-1/2 -translate-x-1/2 z-20">
-              <div className="w-30 h-30 rounded-full border-6 border-sat-school-blue overflow-hidden bg-white">
+              <div className="w-40 h-40 rounded-full border-8 border-sat-school-blue overflow-hidden bg-white">
                 <Image
                   src="/logo3.svg"
                   alt="Saturn V"
@@ -37,8 +37,8 @@ export default function About() {
                 />
               </div>
             </div>
-            <h2 className="text-3xl font-bold text-center mt-12">SATURN V</h2>
-            <p className="text-xl text-center text-sat-school-blue font-bold [text-shadow:1px_1px_0_rgba(0,0,0,0.3)]">
+            <h2 className="text-4xl font-bold text-center mt-24">SATURN V</h2>
+            <p className="text-2xl mt-3 text-center text-sat-school-blue font-bold [text-shadow:1px_1px_0_rgba(0,0,0,0.3)]">
               การร่วมกับหน่วยงานรัฐ และเอกชน <br />
               เพื่อนำจุดแข็งของแต่ละองค์กรมาพัฒนา <br />
               ศักยภาพของเด็กไทย และขับเคลื่อนด้วยกัน <br />
@@ -74,25 +74,25 @@ export default function About() {
           <YellowBoxesWithGrayShade
             title="1. ความคิดแบบพัฒนาได้ (Growth Mindset)"
             body="ความเชื่อและความเข้าใจว่าความสามารถ และสติปัญญาเป็นสิ่งที่พัฒนา เปลี่ยนแปลงได้โดยการใช้เวลาและความพยายาม"
-            imageSrc="/icon2-1.png"
+            imageSrc="/icon-about1.png"
           />
 
           <YellowBoxesWithGrayShade
             title="2. การล้มแล้วลุก (Resilience)"
             body="ความสามารถที่จะปรับตัวและฟื้นตัว เมื่อตกอยู่ในสถานการณ์ยากลำบาก มีแรงกดดันหรือมีความเครียดสูง หรือเมื่อเจอกับความล้มเหลว"
-            imageSrc="/icon2-2.png"
+            imageSrc="/icon-about2.png"
           />
 
           <YellowBoxesWithGrayShade
             title="3. การรับรู้และเข้าใจตนเอง (Self Awareness)"
             body="การรับรู้และเข้าใจว่าตนเองกำลังคิด ทำหรือรู้สึกอะไรรวมถึงการรับรู้และเข้าใจจุดเด่นจุดด้อยสิ่งที่ตนให้คุณค่าและความสนใจของตนเอง"
-            imageSrc="/icon2-3.png"
+            imageSrc="/icon-about3.png"
           />
 
           <YellowBoxesWithGrayShade
             title="4. พฤติกรรมเอื้อสังคม (Prosocial Behavior)"
             body="พฤติกรรมที่ตั้งใจทำออกมา เพื่อให้เป็นประโยชน์ต่อคนอื่นและสิ่งรอบตัว"
-            imageSrc="/icon2-4.png"
+            imageSrc="/icon-about4.png"
           />
         </div>
       </div>
