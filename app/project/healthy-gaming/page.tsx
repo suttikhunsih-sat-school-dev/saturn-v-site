@@ -16,7 +16,6 @@ export default function HealthyGaming() {
       participantNumbers={{
         students: 80,
         volunteers: 15,
-        teachers: 10,
       }}
       imageGruopSrc="/healthy-gaming-image-group.png"
       videoSrc="https://www.youtube.com/embed/yqYhS3ncMrY"

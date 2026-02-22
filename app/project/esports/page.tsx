@@ -19,7 +19,6 @@ export default function Esports() {
       participantNumbers={{
         students: 2000,
         volunteers: 50,
-        teachers: 10,
       }}
       imageGruopSrc="/esportImage.png"
       videoSrc="https://www.youtube.com/embed/ZicFYDQItgM"

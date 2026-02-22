@@ -17,7 +17,6 @@ export default function CgdUnplugCoding() {
       participantNumbers={{
         students: 80,
         volunteers: 10,
-        teachers: 10,
       }}
       imageGruopSrc="/unplug-coding-image-group.png"
     />

@@ -15,7 +15,6 @@ export default function SignatureWorkshop() {
       postProjectOutcome="ได้ฝึกวิธีการสื่อสารที่ช่วย สร้างแรงจูงใจในการเรียนรู้ของเด็ก และได้แลกเปลี่ยนประสบการณ์และไอเดียกับผู้เข้าร่วม"
       participantNumbers={{
         students: 14,
-        volunteers: 20,
         teachers: 25,
       }}
       imageGruopSrc="/signature-workshop-image-group.png"

@@ -18,8 +18,8 @@ interface SubProjectPageContentProps {
   postProjectOutcome: string;
   participantNumbers: {
     students: number;
-    volunteers: number;
-    teachers: number;
+    volunteers?: number;
+    teachers?: number;
   };
   imageGruopSrc: string;
   videoSrc?: string;
@@ -108,14 +108,20 @@ const SubProjectPageContent = ({
             description={`นักเรียน ${participantNumbers.students} คน`}
             imageSrc="/students.png"
           />
-          <MiniYellowCard
-            description={`อาสา ${participantNumbers.volunteers} คน`}
-            imageSrc="/teacher-female.png"
-          />
-          <MiniYellowCard
-            description={`คุณครู ${participantNumbers.teachers} คน`}
-            imageSrc="/teacher-with-board.png"
-          />
+
+          {participantNumbers.volunteers && (
+            <MiniYellowCard
+              description={`อาสา ${participantNumbers.volunteers} คน`}
+              imageSrc="/teacher.png"
+            />
+          )}
+
+          {participantNumbers.teachers && (
+            <MiniYellowCard
+              description={`คุณครู ${participantNumbers.teachers} คน`}
+              imageSrc="/teacher-with-board.png"
+            />
+          )}
         </div>
       </div>
       {/* image content */}
