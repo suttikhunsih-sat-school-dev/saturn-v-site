@@ -24,7 +24,7 @@ export default function PR() {
           />
         </div>
       </div>
-      <div className="w-full h-full pointer-events-none pt-24">
+      <div className="w-full h-full pt-24">
         <div className="w-full grid grid-cols-2 gap-8 px-4 md:px-20 pt-26">
           {/* Facebook Box */}
           <div className="bg-sat-school-dark-blue rounded-3xl p-2 pl-4 flex items-center gap-2 overflow-hidden">
@@ -36,7 +36,14 @@ export default function PR() {
                 className="object-contain scale-130 "
               />
             </div>
-            <Text.Subtitle textColor="white">Saturday School</Text.Subtitle>
+            <a
+              href="https://www.facebook.com/SaturdaySchoolThailand"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer hover:opacity-80 transition-opacity"
+            >
+              <Text.Subtitle textColor="white">Saturday School</Text.Subtitle>
+            </a>
             <div className="bg-sat-school-secondary-yellow rounded-2xl w-[240px] h-[150px] flex items-center justify-center">
               <div className="w-[230px] h-[140px] rounded-2xl flex-shrink-0 relative overflow-hidden">
                 <Image
@@ -59,10 +66,17 @@ export default function PR() {
                 className="object-contain scale-386"
               />
             </div>
-            <div className="flex flex-col justify-center items-center">
-              <Text.Subtitle textColor="white">Saturday School</Text.Subtitle>
-              <Text.Subtitle textColor="white">Thailand</Text.Subtitle>
-            </div>
+            <a
+              href="https://www.tiktok.com/@saturdayschoolthailand?_r=1&_t=ZS-935PvjYxvFQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer hover:opacity-80 transition-opacity"
+            >
+              <div className="flex flex-col justify-center items-center">
+                <Text.Subtitle textColor="white">Saturday School</Text.Subtitle>
+                <Text.Subtitle textColor="white">Thailand</Text.Subtitle>
+              </div>
+            </a>
             <div className="bg-sat-school-secondary-yellow rounded-2xl w-[240px] h-[150px] h-full flex items-center justify-center">
               <div className="w-[230px] h-[140px] rounded-2xl flex-shrink-0 relative overflow-hidden">
                 <Image
@@ -85,10 +99,17 @@ export default function PR() {
                 className="object-contain scale-100"
               />
             </div>
-            <div className="flex flex-col justify-center items-center">
-              <Text.Subtitle textColor="white">Saturday School</Text.Subtitle>
-              <Text.Subtitle textColor="white">Thailand</Text.Subtitle>
-            </div>
+            <a
+              href="https://www.instagram.com/saturdayschoolthailand"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer hover:opacity-80 transition-opacity"
+            >
+              <div className="flex flex-col justify-center items-center">
+                <Text.Subtitle textColor="white">Saturday School</Text.Subtitle>
+                <Text.Subtitle textColor="white">Thailand</Text.Subtitle>
+              </div>
+            </a>
             <div className="bg-sat-school-secondary-yellow rounded-2xl w-[240px] h-[150px] flex items-center justify-center">
               <div className="w-[230px] h-[140px] rounded-2xl flex-shrink-0 relative overflow-hidden">
                 <Image
@@ -111,10 +132,17 @@ export default function PR() {
                 className="object-contain scale-380"
               />
             </div>
-            <div className="flex flex-col justify-center items-center">
-              <Text.Subtitle textColor="white">Saturday School</Text.Subtitle>
-              <Text.Subtitle textColor="white">Thailand</Text.Subtitle>
-            </div>
+            <a
+              href="https://saturday-school.org/th"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer hover:opacity-80 transition-opacity"
+            >
+              <div className="flex flex-col justify-center items-center">
+                <Text.Subtitle textColor="white">Saturday School</Text.Subtitle>
+                <Text.Subtitle textColor="white">Thailand</Text.Subtitle>
+              </div>
+            </a>
             <div className="bg-sat-school-secondary-yellow rounded-2xl w-[240px] h-[150px] flex items-center justify-center">
               <div className="w-[230px] h-[140px] rounded-2xl flex-shrink-0 relative overflow-hidden">
                 <Image

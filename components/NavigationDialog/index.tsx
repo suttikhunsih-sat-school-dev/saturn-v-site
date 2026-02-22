@@ -17,9 +17,9 @@ export default function NavigationDialog({ isOpen, onClose }: NavigationDialogPr
     visible: {
       x: 0,
       transition: {
-        type: 'spring' as const,
-        stiffness: 500,
-        damping: 100,
+        type: 'tween' as const,
+        stiffness: 100,
+        damping: 1,
       },
     },
     exit: {
@@ -72,13 +72,13 @@ export default function NavigationDialog({ isOpen, onClose }: NavigationDialogPr
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="fixed right-0 top-0 h-screen w-full max-w-sm bg-sat-school-primary-yellow shadow-2xl z-40 overflow-y-auto"
+            className="fixed right-0 top-0 h-screen w-full max-w-[280px] bg-sat-school-primary-yellow shadow-2xl z-40 overflow-y-auto"
           >
             <div className="p-8 pt-24">
               {/* Close button */}
               <button
                 onClick={onClose}
-                className="absolute top-16 right-10 text-black hover:text-sat-school-dark-blue transition-colors"
+                className="absolute top-6 right-6 text-black hover:text-sat-school-dark-blue transition-colors"
               >
                 <svg
                   width="32"
