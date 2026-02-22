@@ -8,6 +8,8 @@ interface PageHeaderProps {
   logoSrc?: string;
   logoAlt?: string;
   backgroundImage?: string;
+  textColor?: string;
+  shadowTitle?: boolean;
 }
 
 export default function PageHeader({
@@ -17,6 +19,8 @@ export default function PageHeader({
   logoSrc = '/logo1.svg',
   logoAlt = 'Saturn V Logo',
   backgroundImage = '/saturn-v-project-page-bg-header-removebg-preview.png',
+  textColor = 'white',
+  shadowTitle,
 }: PageHeaderProps) {
   return (
     <div
@@ -34,10 +38,10 @@ export default function PageHeader({
 
       {/* Text Container - Positioned on the right side of background */}
       <div className="flex-1 px-6 md:px-12 flex flex-col justify-center">
-        <Text.Header noShadow textColor="white">
+        <Text.Header noShadow={!shadowTitle} textColor={textColor}>
           {title}
         </Text.Header>
-        <Text.Header noShadow textColor="white">
+        <Text.Header noShadow={!shadowTitle} textColor={textColor}>
           {subtitle}{' '}
           {subtitleHighlight && (
             <span className="text-sat-school-secondary-yellow">{subtitleHighlight}</span>

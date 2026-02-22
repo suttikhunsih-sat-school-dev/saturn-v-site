@@ -1,7 +1,94 @@
+import Image from 'next/image';
+import PageHeader from '../../components/PageHeader';
+import Text from '../../components/Text';
 export default function PR() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <h1 className="text-4xl font-bold">PR</h1>
+    <div className="relative min-h-screen text-white">
+      <Image
+        src="/bg-home-page.jpg"
+        alt="Background"
+        fill
+        className="object-cover -z-10"
+        priority
+      />
+      <div className="bg-sat-school-blue absolute top-0 left-0 w-full h-[100px]">
+        <div style={{ paddingRight: 0, paddingLeft: 10 }} className="px-4 md:px-8 mt-2">
+          <PageHeader
+            title="Public Relations  Saturday School"
+            subtitle=""
+            subtitleHighlight=""
+            logoSrc="/logo-main-black.png"
+            logoAlt="Sat school Logo"
+            backgroundImage="/pr-band-removebg-preview.png"
+            textColor="black"
+          />
+        </div>
+      </div>
+      <div className="w-full h-full pointer-events-none pt-30">
+        <div className="w-full grid grid-cols-2 gap-8 px-4 md:px-20 pt-26">
+          {/* Facebook Box */}
+          <div className="bg-sat-school-dark-blue rounded-3xl p-6 flex items-center gap-6 overflow-hidden">
+            <div className="w-[140px] h-[140px] bg-white rounded-3xl flex-shrink-0 relative overflow-hidden">
+              <Image
+                src="/pr-fb.png"
+                alt="Facebook"
+                fill
+                className="object-contain scale-380 pr-1"
+              />
+            </div>
+            <Text.Subtitle textColor="white">Saturday School</Text.Subtitle>
+            <div className="bg-sat-school-secondary-yellow w-[160px] h-full">aaa</div>
+          </div>
+
+          {/* TikTok Box */}
+          <div className="bg-sat-school-dark-blue rounded-3xl p-6 flex items-center gap-6 overflow-hidden">
+            <div className="w-[140px] h-[140px] bg-white rounded-3xl flex-shrink-0 relative overflow-hidden">
+              <Image
+                src="/pr-tt.png"
+                alt="TikTok"
+                fill
+                className="object-contain scale-383"
+              />
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <Text.Subtitle textColor="white">Saturday School</Text.Subtitle>
+              <Text.Subtitle textColor="white">Thailand</Text.Subtitle>
+            </div>
+          </div>
+
+          {/* Instagram Box */}
+          <div className="bg-sat-school-dark-blue rounded-3xl p-6 flex items-center gap-6 overflow-hidden">
+            <div className="w-[140px] h-[140px] bg-transparent rounded-3xl flex-shrink-0 relative overflow-hidden">
+              <Image
+                src="/pr-ig.png"
+                alt="Instagram"
+                fill
+                className="object-contain scale-340 pl-3"
+              />
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <Text.Subtitle textColor="white">Saturday School</Text.Subtitle>
+              <Text.Subtitle textColor="white">Thailand</Text.Subtitle>
+            </div>
+          </div>
+
+          {/* Website Box */}
+          <div className="bg-sat-school-dark-blue rounded-3xl p-6 flex items-center gap-6 overflow-hidden">
+            <div className="w-[140px] h-[140px] bg-transparent rounded-3xl flex-shrink-0 relative overflow-hidden">
+              <Image
+                src="/pr-site.png"
+                alt="sat-school website"
+                fill
+                className="object-contain scale-380"
+              />
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <Text.Subtitle textColor="white">Saturday School</Text.Subtitle>
+              <Text.Subtitle textColor="white">Thailand</Text.Subtitle>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
