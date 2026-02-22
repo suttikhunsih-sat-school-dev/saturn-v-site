@@ -33,7 +33,7 @@ export default function PR() {
                 src="/pr-fb.png"
                 alt="Facebook"
                 fill
-                className="object-contain scale-380 pr-1"
+                className="object-contain scale-130 "
               />
             </div>
             <Text.Subtitle textColor="white">Saturday School</Text.Subtitle>
@@ -63,7 +63,7 @@ export default function PR() {
                 src="/pr-ig.png"
                 alt="Instagram"
                 fill
-                className="object-contain scale-340 pl-3"
+                className="object-contain scale-100 pl-3"
               />
             </div>
             <div className="flex flex-col justify-center items-center">
