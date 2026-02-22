@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Text from '../../components/Text';
 export default function Report() {
   return (
     <div className="relative min-h-screen text-white overflow-hidden">
@@ -12,23 +13,23 @@ export default function Report() {
 
       <div className="flex h-full relative">
         {/* Left Column */}
-        <div className="flex-1 px-8 pl-0 py-6">
+        <div className="flex-[0.75] px-8 pl-0 py-6">
           {/* Blue Banner */}
-          <div className="bg-sat-school-dark-blue rounded-3xl p-8 mb-8 flex items-center gap-6 h-56">
+          <div className="bg-sat-school-dark-blue p-8 mb-4 flex items-center gap-6 h-56">
             <div className="flex items-center font-bold text-white bg-transparent p-0 gap-6 absolute top-[-16px] left-20">
               {/* The Giant S */}
-              <h1 className="text-[350px] leading-[0.8] tracking-tighter drop-shadow-[8px_8px_0px_rgba(0,0,0,0.2)]">
+              <h1 className="text-[340px] leading-[0.8] tracking-tighter drop-shadow-[8px_8px_0px_#6f8aac]">
                 S
               </h1>
               {/* The Stacked Text */}
               <div className="flex flex-col justify-between h-[190px] ml-[-1px] pt-2">
-                <span className="text-6xl leading-none drop-shadow-[8px_8px_0px_rgba(0,0,0,0.2)]">
+                <span className="text-6xl leading-none drop-shadow-[2px_2px_0px_#6f8aac]">
                   ATURDAY
                 </span>
-                <span className="text-6xl leading-none drop-shadow-[8px_8px_0px_rgba(0,0,0,0.2)]">
+                <span className="text-6xl leading-none drop-shadow-[2px_2px_0px_#6f8aac]">
                   CHOOL
                 </span>
-                <span className="text-6xl leading-none drop-shadow-[8px_8px_0px_rgba(0,0,0,0.2)]">
+                <span className="text-6xl leading-none drop-shadow-[2px_2px_0px_#6f8aac]">
                   ATURN V
                 </span>
               </div>
@@ -36,52 +37,67 @@ export default function Report() {
           </div>
 
           {/* Yellow Title Box */}
-          <div className="bg-sat-school-primary-yellow rounded-3xl p-8 mb-8">
-            <h2 className="text-3xl font-bold text-sat-school-dark-blue mb-4">
+          <div className="bg-[#fff7d0] rounded-xl p-2 mb-4">
+            <h2 className="text-5xl text-sat-school-blue font-bold text-center">
+              {' '}
               การรายงานผลหลังจบโครงการ (Report)
             </h2>
           </div>
 
           {/* Three Info Boxes */}
-          <div className="space-y-6">
+          <div className="space-y-6 pl-4">
             {/* 1Page Box */}
-            <div className="bg-sat-school-primary-yellow rounded-3xl p-6 flex items-center gap-4">
-              <div className="w-20 h-20 bg-sat-school-dark-blue rounded-2xl flex items-center justify-center flex-shrink-0">
-                <div className="text-4xl">📄</div>
+            <div className="bg-sat-school-secondary-yellow rounded-3xl p-2 flex items-center gap-0 max-h-[140px]">
+              <div className="w-40 h-40 rounded-2xl flex items-center justify-center">
+                <Image
+                  src="/report-1.png"
+                  alt="Data Icon"
+                  width={500}
+                  height={500}
+                  className="object-contain scale-160 pt-2 rounded"
+                />
               </div>
-              <div className="text-black">
-                <h3 className="text-2xl font-bold mb-2">1Page / Impact Report</h3>
-                <p className="text-sm">
-                  สรุปข้อมูลหรือข้อเสนอแนะ หนนด給ผู้เกี่ยวข้อง เบิ้งสรระด้านคณ ดำนาแรว
-                  ผ้ำใใจกับมิ ใช้ข้อมูนรีสยตไเครแนนประบัน
+              <div className="text-black pl-4 pr-8">
+                <Text.Subtitle textColor="black"> 1Page / Impact Report</Text.Subtitle>
+                <p className="text-black text-2xl">
+                  สรุปข้อมูลหรือข้อเสนอทั้งหมดให้อยู่ในหน้าเดียว เน้นสาระสำคัญ อ่านเร็ว
+                  เข้าใจทันที ใช้เพื่อพรีเซนต์ไอเดียแบบกระชับ
                 </p>
               </div>
             </div>
-
-            {/* Data Box */}
-            <div className="bg-sat-school-primary-yellow rounded-3xl p-6 flex items-center gap-4">
-              <div className="w-20 h-20 bg-sat-school-dark-blue rounded-2xl flex items-center justify-center flex-shrink-0">
-                <div className="text-4xl">📊</div>
+            <div className="bg-sat-school-secondary-yellow rounded-3xl p-2 flex items-center gap-0 max-h-[140px]">
+              <div className="w-40 h-40 rounded-2xl flex items-center justify-center">
+                <Image
+                  src="/report-2.png"
+                  alt="Data Icon"
+                  width={500}
+                  height={500}
+                  className="object-contain scale-160 rounded"
+                />
               </div>
-              <div className="text-black">
-                <h3 className="text-2xl font-bold mb-2">Data</h3>
-                <p className="text-sm">
-                  ข้อมูลเชิงอำเมิจฟึจจอแนนฟีจฟึดรตั้นนหภาใช้นิเคระฅ ศึกษิมใน หรือ
-                  สนับสนุนข้อเสนอ เบ่า สถิติ ตัวเลข ผลสำารวจ
+              <div className="text-black pl-4 pr-8">
+                <Text.Subtitle textColor="black"> Data</Text.Subtitle>
+                <p className="text-black text-2xl">
+                  ข้อมูลเชิงตัวเลขหรือข้อเท็จจริงที่นำมาใช้วิเคราะห์ ตัดสินใจ
+                  หรือสนับสนุนข้อเสนอ เช่น สถิติ ตัวเลข ผลสำรวจ
                 </p>
               </div>
             </div>
-
-            {/* Visual Box */}
-            <div className="bg-sat-school-primary-yellow rounded-3xl p-6 flex items-center gap-4">
-              <div className="w-20 h-20 bg-sat-school-dark-blue rounded-2xl flex items-center justify-center flex-shrink-0">
-                <div className="text-4xl">📈</div>
+            <div className="bg-sat-school-secondary-yellow rounded-3xl p-2 flex items-center gap-0 max-h-[140px]">
+              <div className="w-40 h-40 rounded-2xl flex items-center justify-center">
+                <Image
+                  src="/report-3.png"
+                  alt="Data Icon"
+                  width={500}
+                  height={500}
+                  className="object-contain scale-160 rounded"
+                />
               </div>
-              <div className="text-black">
-                <h3 className="text-2xl font-bold mb-2">Visual</h3>
-                <p className="text-sm">
-                  การนำเสนอข้อมูลแบบนำภาพ เป็น อินโฟรมติก การบ โครงแบบ เผิ่ดให้เข้าใจง่าย
-                  เบิ้นภาพแรว และศึก์ศูดความสนใจ
+              <div className="text-black pl-4 pr-8">
+                <Text.Subtitle textColor="black"> Visual</Text.Subtitle>
+                <p className="text-black text-2xl">
+                  การนำเสนอข้อมูลแบบภาพ เช่น อินโฟกราฟิก กราฟ ไดอะแกรม เพื่อให้เข้าใจง่าย
+                  เห็นภาพเร็ว และดึงดูดความสนใจ
                 </p>
               </div>
             </div>
