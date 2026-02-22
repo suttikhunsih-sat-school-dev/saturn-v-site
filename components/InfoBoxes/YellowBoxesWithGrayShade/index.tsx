@@ -10,7 +10,7 @@ const YellowBoxesWithGrayShade = ({
   imageSrc,
 }: YellowBoxesWithGrayShadeProps) => {
   return (
-    <div className="relative inline-block max-w-[33rem]">
+    <div className="relative inline-block w-130 h-30">
       <div className={`absolute top-3 left-3 w-full h-full rounded-lg bg-[#9db0ac]`} />
       <div className="absolute -left-16 top-1/2 -translate-y-1/2 z-20">
         <div className="relative w-22 h-22 rounded-full border-6 border-sat-school-blue bg-white overflow-hidden flex items-center justify-center">
@@ -24,7 +24,7 @@ const YellowBoxesWithGrayShade = ({
           />
         </div>
       </div>
-      <div className="relative bg-sat-school-secondary-yellow p-3 pl-8 rounded-lg">
+      <div className="relative bg-sat-school-secondary-yellow p-3 pl-8 rounded-lg w-full h-full flex flex-col">
         <h2 className="text-3xl font-bold text-[#0255a5] [text-shadow:1px_1px_0_rgba(0,0,0,0.3)]">
           {title}
         </h2>

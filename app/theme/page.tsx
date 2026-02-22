@@ -13,7 +13,7 @@ const boxesData = [
       '• Media Literacy',
       '• Financial Skills',
     ],
-    imageSrc: '/icon3-1.png',
+    imageSrc: '/icon-theme1.png',
     marginTop: 'mt-25',
   },
   {
@@ -26,25 +26,25 @@ const boxesData = [
       '• Game Development',
       '• Coding',
     ],
-    imageSrc: '/icon3-2.png',
+    imageSrc: '/icon-theme2.png',
     marginTop: 'mt-5',
   },
   {
     title: 'SOCIAL',
     body: ['• Advocacy', '• Democracy', '• Ambassador'],
-    imageSrc: '/icon3-3.png',
+    imageSrc: '/icon-theme3.png',
     marginTop: '-mt-15',
   },
   {
     title: 'HEALTH',
     body: ['• Mental', '• Non-communicable diseases (NCDs)', '• Sex education '],
-    imageSrc: '/icon3-4.png',
+    imageSrc: '/icon-theme4.png',
     marginTop: '-mt-35',
   },
   {
     title: 'Environment & Sustainability',
     body: ['•  Sustainable Development Goals'],
-    imageSrc: '/icon3-5.png',
+    imageSrc: '/icon-theme5.png',
     marginTop: '-mt-55',
   },
 ];
