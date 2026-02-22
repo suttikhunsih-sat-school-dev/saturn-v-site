@@ -41,7 +41,7 @@ const SubProjectPageContent = ({
       {/* Back Button - Floating */}
       <Link
         href="/project"
-        className="fixed top-8 left-8 z-30 inline-flex items-center gap-2 px-5 py-2 bg-sat-school-dark-blue text-white font-bold rounded-full hover:bg-sat-school-blue transition-colors shadow-md"
+        className="fixed top-8 left-8 z-30 inline-flex items-center gap-2 px-5 py-2 bg-sat-school-secondary-yellow text-sat-school-dark-blue font-bold rounded-full shadow-lg hover:bg-sat-school-egg-yellow transition-colors shadow-md"
       >
         <svg
           width="20"
