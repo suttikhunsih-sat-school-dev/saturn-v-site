@@ -38,10 +38,10 @@ const ProjectBluBox: React.FC<ProjectBluBoxProps> = ({
           isDarkBlue ? 'bg-sat-school-dark-blue' : 'bg-sat-school-blue'
         )}
       >
-        <div className="p-6 flex flex-col gap-6 justify-between h-full">
+        <div className="p-6 flex flex-col gap-6 justify-center items-center h-full">
           {/* Title */}
           <div
-            className="bg-sat-school-secondary-yellow text-black font-bold text-center px-6 py-3 rounded-2xl w-full max-w-[250] h-[80px] flex items-center justify-center"
+            className="bg-sat-school-secondary-yellow text-black font-bold text-center px-3 py-3 rounded-2xl w-full max-w-[250] h-[80px] flex items-center justify-center"
             style={{
               boxShadow: '8px 8px 0 0 white, 0 4px 12px 0 rgba(0, 0, 0, 0.15)',
             }}

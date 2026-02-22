@@ -6,6 +6,7 @@ export default function MorekoKids() {
       logoList={[
         { src: '/logo-main-black.png', alt: 'Logo sat school black' },
         { src: '/logo3.svg', alt: 'Logo saturn v black' },
+        { src: '/logo-morkookids-1.png', alt: 'Logo Morkookids', size: 140 },
       ]}
       pageTitle="Saturday School Saturn V Project"
       pageSubtitle="โครงการ หมอคู่คิดส์ใส่ใจ สุขภาพเด็กไทย ดีถ้วนหน้า"
@@ -19,7 +20,7 @@ export default function MorekoKids() {
         teachers: 10,
       }}
       imageGruopSrc="/morkookids-image-group.png"
-      videoSrc="https://www.youtube.com/embed/yqYhS3ncMrY"
+      videoSrc="https://www.youtube.com/embed/ni0QGmYCCf4"
     />
   );
 }

@@ -3,7 +3,7 @@ import ProjectBluBox from '../../components/ProjectPage/ProjectBluBox';
 export default function Project() {
   const projectBoxes = [
     {
-      title: 'Project Career & Future Skills',
+      title: 'PROJECT CAREER & FUTURE SKILLS',
       items: [
         { label: 'Teacherpreneur', navLink: '/project/teacherpreneur' },
         { label: 'ห้องเรียน ESPORTs', navLink: '/project/esports' },
@@ -13,11 +13,11 @@ export default function Project() {
         },
         { label: 'UnPlug Coding', navLink: '/project/cgd-unplug-coding' },
       ],
-      imageSrc: '/cover.png',
+      imageSrc: '/pic4-1.jpeg',
       imageAlt: 'Project Career & Future Skills',
     },
     {
-      title: 'Environment',
+      title: 'ENVIRONMENT',
       items: [
         {
           label: 'Recycling Education ครูชวนแยก',
@@ -25,11 +25,11 @@ export default function Project() {
         },
       ],
       subtitle: 'ศูนย์เชื่อฯ-เด็มปนำลาดาธ-เอียกทีกอบบ ของโครงการนี้ฉ',
-      imageSrc: '/bg-home-page.jpg',
+      imageSrc: '/pic4-2.jpeg',
       imageAlt: 'Environment Project',
     },
     {
-      title: 'Project Health',
+      title: 'PROJECT HEALTH',
       items: [
         { label: 'Workshop Healthy Gameplay', navLink: '/project/healthy-gaming' },
         {
@@ -37,11 +37,11 @@ export default function Project() {
           navLink: '/project/morkookids',
         },
       ],
-      imageSrc: '/cover.png',
+      imageSrc: '/pic4-3.png',
       imageAlt: 'Project Health',
     },
     {
-      title: 'Project 4 Core Values',
+      title: 'PROJECT 4 CORE VALUES',
       items: [
         {
           label: 'Growth mindset : Signature Workshop',
@@ -54,7 +54,7 @@ export default function Project() {
           navLink: '/project/public-good-games',
         },
       ],
-      imageSrc: '/bg-home-page.jpg',
+      imageSrc: '/pic4-4.png',
       imageAlt: 'Project 4 Core Values',
     },
   ];

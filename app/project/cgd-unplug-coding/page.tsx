@@ -6,6 +6,7 @@ export default function CgdUnplugCoding() {
       logoList={[
         { src: '/logo-main-black.png', alt: 'Logo sat school black' },
         { src: '/logo3.svg', alt: 'Logo saturn v black' },
+        { src: '/logo-cgd-1.png', alt: 'Logo CDG Unplug Coding', size: 140 },
       ]}
       pageTitle="Saturday School Saturn V Project"
       pageSubtitle="CDG Unplug Coding"
