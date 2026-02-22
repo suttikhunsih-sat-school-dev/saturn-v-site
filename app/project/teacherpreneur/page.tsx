@@ -26,7 +26,7 @@ export default function Teacherpreneur() {
         teachers: 10,
       }}
       imageGruopSrc="/techerpreneur-right-image-group.png"
-      videoSrc="https://www.youtube.com/embed/yqYhS3ncMrY"
+      videoSrc="https://www.youtube.com/embed/pqXOhziHf0U"
     />
   );
 }

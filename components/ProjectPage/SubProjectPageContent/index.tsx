@@ -8,6 +8,7 @@ interface SubProjectPageContentProps {
   logoList: {
     src: string;
     alt: string;
+    size?: number;
   }[];
   pageTitle: string;
   pageSubtitle: string;

@@ -6,6 +6,8 @@ export default function MediaLiteracy() {
       logoList={[
         { src: '/logo-main-black.png', alt: 'Logo sat school black' },
         { src: '/logo3.svg', alt: 'Logo saturn v black' },
+        { src: '/logo-mediaLit-1.png', alt: 'Logo BMA', size: 60 },
+        { src: '/logo-mediaLit-2.png', alt: 'Logo TikTok', size: 60 },
       ]}
       pageTitle="Saturday School Saturn V Project"
       pageSubtitle="โครงการ ส่งเสริมการรู้เท่าทันสื่อออนไลน์ (Media Literacy)"
@@ -19,7 +21,7 @@ export default function MediaLiteracy() {
         teachers: 10,
       }}
       imageGruopSrc="/media-literacy-group-image.png"
-      videoSrc="https://www.youtube.com/embed/yqYhS3ncMrY"
+      videoSrc="https://www.youtube.com/embed/FYNbWJdBHpY"
     />
   );
 }

@@ -6,6 +6,9 @@ export default function Esports() {
       logoList={[
         { src: '/logo-main-black.png', alt: 'Logo sat school black' },
         { src: '/logo3.svg', alt: 'Logo saturn v black' },
+        { src: '/logo-esport-1.png', alt: 'Logo SEA', size: 50 },
+        { src: '/logo-esport-2.png', alt: 'Logo GARENA Academy', size: 100 },
+        { src: '/logo-esport-3.png', alt: 'Logo GARENA', size: 60 },
       ]}
       pageTitle="Saturday School Saturn V Project"
       pageSubtitle="Garena ห้องเรียน ESPORTS"
@@ -19,7 +22,7 @@ export default function Esports() {
         teachers: 10,
       }}
       imageGruopSrc="/esportImage.png"
-      videoSrc="https://www.youtube.com/embed/yqYhS3ncMrY"
+      videoSrc="https://www.youtube.com/embed/ZicFYDQItgM"
     />
   );
 }
