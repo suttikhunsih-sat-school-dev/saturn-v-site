@@ -18,7 +18,6 @@ export default function MediaLiteracy() {
       participantNumbers={{
         students: 500,
         volunteers: 35,
-        teachers: 10,
       }}
       imageGruopSrc="/media-literacy-group-image.png"
       videoSrc="https://www.youtube.com/embed/FYNbWJdBHpY"

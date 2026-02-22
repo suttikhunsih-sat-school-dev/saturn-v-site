@@ -16,7 +16,6 @@ export default function PublicGoodGames() {
       participantNumbers={{
         students: 758,
         volunteers: 88,
-        teachers: 10,
       }}
       imageGruopSrc="/public-good-games-image-group.png"
     />

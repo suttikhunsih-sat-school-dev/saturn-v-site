@@ -17,7 +17,6 @@ export default function MorekoKids() {
       participantNumbers={{
         students: 14,
         volunteers: 20,
-        teachers: 10,
       }}
       imageGruopSrc="/morkookids-image-group.png"
       videoSrc="https://www.youtube.com/embed/ni0QGmYCCf4"
