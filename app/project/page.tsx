@@ -13,7 +13,7 @@ export default function Project() {
         },
         { label: 'UnPlug Coding', navLink: '/project/cgd-unplug-coding' },
       ],
-      imageSrc: '/cover.png',
+      imageSrc: '/pic4-1.jpeg',
       imageAlt: 'Project Career & Future Skills',
     },
     {
@@ -25,7 +25,7 @@ export default function Project() {
         },
       ],
       subtitle: 'ศูนย์เชื่อฯ-เด็มปนำลาดาธ-เอียกทีกอบบ ของโครงการนี้ฉ',
-      imageSrc: '/bg-home-page.jpg',
+      imageSrc: '/pic4-2.jpeg',
       imageAlt: 'Environment Project',
     },
     {
@@ -37,7 +37,7 @@ export default function Project() {
           navLink: '/project/morkookids',
         },
       ],
-      imageSrc: '/cover.png',
+      imageSrc: '/pic4-3.png',
       imageAlt: 'Project Health',
     },
     {
@@ -54,7 +54,7 @@ export default function Project() {
           navLink: '/project/public-good-games',
         },
       ],
-      imageSrc: '/bg-home-page.jpg',
+      imageSrc: '/pic4-4.png',
       imageAlt: 'Project 4 Core Values',
     },
   ];
