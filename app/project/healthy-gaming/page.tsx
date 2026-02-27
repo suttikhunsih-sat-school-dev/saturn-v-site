@@ -18,7 +18,7 @@ export default function HealthyGaming() {
         volunteers: 15,
       }}
       imageGruopSrc="/healthy-gaming-image-group.png"
-      videoSrc="https://www.youtube.com/embed/yqYhS3ncMrY"
+      videoSrc="https://www.youtube.com/embed/fbVOURYefIg"
     />
   );
 }

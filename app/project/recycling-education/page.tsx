@@ -19,7 +19,7 @@ export default function RecyclingEducation() {
         teachers: 20,
       }}
       imageGruopSrc="/recycling-image-group.png"
-      videoSrc="https://www.youtube.com/embed/yqYhS3ncMrY"
+      videoSrc="https://www.youtube.com/embed/V10xrTKpBb0"
     />
   );
 }
