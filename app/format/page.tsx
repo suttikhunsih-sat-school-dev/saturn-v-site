@@ -75,11 +75,11 @@ export default function Format() {
               <div className="absolute -top-14 left-1/2 -translate-x-1/2 z-20">
                 <div className="w-28 h-28 rounded-full border-6 border-sat-school-blue overflow-hidden bg-white">
                   <Image
-                    src="/logo3.svg"
+                    src="/icon-format1.png"
                     alt="Saturn V"
                     width={96}
                     height={96}
-                    className="object-contain w-full h-full scale-90"
+                    className="object-contain w-full h-full scale-110"
                   />
                 </div>
               </div>
@@ -102,7 +102,7 @@ export default function Format() {
               <div className="absolute -top-14 left-1/2 -translate-x-1/2 z-20">
                 <div className="w-28 h-28 rounded-full border-6 border-sat-school-blue overflow-hidden bg-white">
                   <Image
-                    src="/logo3.svg"
+                    src="/icon-theme1.png"
                     alt="Saturn V"
                     width={96}
                     height={96}
