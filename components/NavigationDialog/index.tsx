@@ -72,8 +72,13 @@ export default function NavigationDialog({ isOpen, onClose }: NavigationDialogPr
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="fixed right-0 top-0 h-screen w-full max-w-[280px] bg-sat-school-primary-yellow shadow-2xl z-40 overflow-y-auto"
+            className="fixed right-0 top-0 h-screen w-full max-w-[300px] bg-sat-school-primary-yellow shadow-2xl z-40 overflow-y-auto"
           >
+            {/* Flag picture top left */}
+            <div className="absolute -top-2 -left-4 p-4">
+              <img src="/flag.svg" alt="Decoration" className="w-30 h-auto -rotate-15" />
+            </div>
+
             <div className="p-8 pt-24">
               {/* Close button */}
               <button
@@ -92,24 +97,29 @@ export default function NavigationDialog({ isOpen, onClose }: NavigationDialogPr
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </button>
-              <div className=" absolute top-33 left-32 rotate-[-45deg]">
+              <div className=" absolute top-33 left-35 rotate-[-10deg] z-10">
                 <Image
-                  src="/logo3.svg"
-                  alt="Logo 1"
-                  width={50}
-                  height={50}
+                  src="/logo4.svg"
+                  alt="Logo 4"
+                  width={60}
+                  height={60}
                   className="object-contain"
                 />
               </div>
 
               {/* Navigation Menu */}
-              <nav className="flex flex-col gap-8">
+              <nav className="flex flex-col gap-4">
                 {Object.entries(menus).map(([title, items], categoryIndex) => (
-                  <motion.div key={title} custom={categoryIndex} variants={itemVariants}>
-                    <h3 className="text-2xl font-bold text-black mb-4 [text-shadow:1px_1px_0_rgba(0,0,0,0.1)]">
+                  <motion.div
+                    key={title}
+                    custom={categoryIndex}
+                    variants={itemVariants}
+                    className="space-y-4 pb-2 border-b border-black/10"
+                  >
+                    <h3 className="inline-block bg-sat-school-dark-blue text-white px-2 py-1 rounded-2xl text-xl font-bold mb-3 [text-shadow:1px_1px_0_rgba(0,0,0,0.1)]">
                       {title}
                     </h3>
-                    <ul className="flex flex-col gap-3 ml-4">
+                    <ul className="flex flex-col gap-2 ml-4">
                       {items.map(([link, label], itemIndex) => (
                         <motion.li
                           key={link}
@@ -119,7 +129,7 @@ export default function NavigationDialog({ isOpen, onClose }: NavigationDialogPr
                           <Link
                             href={link}
                             onClick={onClose}
-                            className="text-lg font-semibold text-black hover:text-sat-school-dark-blue hover:underline underline-offset-4 transition-colors block"
+                            className="block px-1 py-1 rounded-lg text-xl text-gray-800 hover:bg-white/40 hover:translate-x-1 transition-all duration-200"
                           >
                             {label}
                           </Link>
